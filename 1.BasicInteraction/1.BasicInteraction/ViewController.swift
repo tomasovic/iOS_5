@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 class ViewController: UIViewController {
 
@@ -28,5 +29,27 @@ class ViewController: UIViewController {
         nameLbl.text = editText.text
     }
     
+    @IBAction func createPanel(_ sender: Any) {
+        let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+            switch action.style{
+            case .default:
+                print("default")
+                
+            case .cancel:
+                print("cancel")
+                
+            case .destructive:
+                print("destructive")
+                
+                
+            }}))
+        self.present(alert, animated: true, completion: nil)
+
+    }
+    
+    @IBAction func createSheet(_ sender: Any) {
+        
+    }
 }
 

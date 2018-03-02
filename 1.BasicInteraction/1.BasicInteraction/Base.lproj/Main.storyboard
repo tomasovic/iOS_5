@@ -26,6 +26,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="Phy-ik-gZN" id="21Z-9z-t02"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdZ-M7-QcV">
                                         <rect key="frame" x="0.0" y="116" width="343" height="30"/>
@@ -57,7 +60,25 @@
                                 </constraints>
                                 <state key="normal" title="Calling another class"/>
                                 <connections>
+                                    <action selector="clickedButton:" destination="nQU-sr-3LB" eventType="touchUpInside" id="gEN-E6-d7G"/>
                                     <action selector="zxc:" destination="Phy-ik-gZN" eventType="touchUpInside" id="WgD-fk-SgS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlV-hF-Wta">
+                                <rect key="frame" x="18" y="451" width="141" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4RV-Eh-saR"/>
+                                </constraints>
+                                <state key="normal" title="Alert Panel"/>
+                                <connections>
+                                    <action selector="createPanel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="L4t-Bq-Sdb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEM-py-qgz">
+                                <rect key="frame" x="16" y="489" width="143" height="30"/>
+                                <state key="normal" title="Alert Sheet"/>
+                                <connections>
+                                    <action selector="createSheet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lrw-qq-cLD"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,9 +86,15 @@
                         <constraints>
                             <constraint firstItem="YOa-Bt-fj5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="43r-6O-Mt3"/>
                             <constraint firstItem="wsW-yR-GqN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="7xH-VK-mfX"/>
+                            <constraint firstItem="PEM-py-qgz" firstAttribute="top" secondItem="xlV-hF-Wta" secondAttribute="bottom" constant="8" id="BCp-WD-3BO"/>
+                            <constraint firstItem="xlV-hF-Wta" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="IqP-Z3-SJm"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YOa-Bt-fj5" secondAttribute="trailing" constant="16" id="O1f-62-Rbb"/>
+                            <constraint firstItem="xlV-hF-Wta" firstAttribute="top" secondItem="wsW-yR-GqN" secondAttribute="bottom" constant="8" id="RuR-KR-PVe"/>
                             <constraint firstItem="wsW-yR-GqN" firstAttribute="top" secondItem="YOa-Bt-fj5" secondAttribute="bottom" constant="32" id="Zy6-9c-uJW"/>
+                            <constraint firstItem="xlV-hF-Wta" firstAttribute="trailing" secondItem="wsW-yR-GqN" secondAttribute="trailing" id="c2K-un-3kf"/>
+                            <constraint firstItem="PEM-py-qgz" firstAttribute="trailing" secondItem="xlV-hF-Wta" secondAttribute="trailing" id="nov-85-1dF"/>
                             <constraint firstItem="YOa-Bt-fj5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="rVK-Vs-nk1"/>
+                            <constraint firstItem="PEM-py-qgz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sDw-B9-TQI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -78,6 +105,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <customObject id="nQU-sr-3LB" userLabel="Some Controller" customClass="SomeController" customModule="__BasicInteraction" customModuleProvider="target"/>
                 <customObject id="Phy-ik-gZN" customClass="CustomController" customModule="__BasicInteraction" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="116" y="118.22660098522168"/>

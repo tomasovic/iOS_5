@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F15868C62049CC7800652BA7 /* CustomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F15868C52049CC7800652BA7 /* CustomController.swift */; };
+		F1877B032049D7F9006A24CC /* SomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1877B022049D7F9006A24CC /* SomeController.swift */; };
 		F1E0E2BC2048BF7F0055B466 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0E2BB2048BF7F0055B466 /* AppDelegate.swift */; };
 		F1E0E2BE2048BF7F0055B466 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E0E2BD2048BF7F0055B466 /* ViewController.swift */; };
 		F1E0E2C12048BF7F0055B466 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E0E2BF2048BF7F0055B466 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		F15868C52049CC7800652BA7 /* CustomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomController.swift; sourceTree = "<group>"; };
+		F1877B022049D7F9006A24CC /* SomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeController.swift; sourceTree = "<group>"; };
 		F1E0E2B82048BF7E0055B466 /* 1.BasicInteraction.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 1.BasicInteraction.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E0E2BB2048BF7F0055B466 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1E0E2BD2048BF7F0055B466 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				F1E0E2C42048BF7F0055B466 /* LaunchScreen.storyboard */,
 				F1E0E2C72048BF7F0055B466 /* Info.plist */,
 				F15868C52049CC7800652BA7 /* CustomController.swift */,
+				F1877B022049D7F9006A24CC /* SomeController.swift */,
 			);
 			path = 1.BasicInteraction;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 				F15868C62049CC7800652BA7 /* CustomController.swift in Sources */,
 				F1E0E2BE2048BF7F0055B466 /* ViewController.swift in Sources */,
 				F1E0E2BC2048BF7F0055B466 /* AppDelegate.swift in Sources */,
+				F1877B032049D7F9006A24CC /* SomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
